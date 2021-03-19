@@ -7,21 +7,40 @@ Welcome to CS5346 Group Project's documentation!
 ================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
    
    pages/government
    pages/business
    pages/people
-   
 
 Introduction
 ------------
 
-To be filled
+**TODO: This section will include overall project description, including background, target and other relevant information**
 
-Data explanation
+Target audience 
+---------------
+
+**TODO: This section will outline all the target user groups of this project and potential queries from them that can be addressed through our analysis**
+
+Data dictionary
 ----------------
 
-To be filled
+**TODO: This section will outline all the attributes in all datasets in detail, including data types, descriptions and sample values**
 
+Data processing & visualisation steps
+-------------------------------------
+
+**TODO: This section will outline the data processing methods / tools. For charts will be elaborated in details**
+
+Overview
+^^^^^^^^
+
+Step-wise process
+^^^^^^^^^^^^^^^^^
+
+Other relevant information
+--------------------------
+
+**TODO: This section will outline all the other relevant information**
