@@ -13,3 +13,13 @@ This line chart shows the percentage of people that has been fully vaccinated ac
 From this chart, we can see that Gibraltar and Israel has achieved a full vaccination percentage of more than 50%. A huge majority of the countries are still at below 5%. By zooming into the 0-5% range, we can see that the rate of vaccination of countries in the EU are fairly clustered, which bodes well for free travel within the EU again the in the future. Based on the rate of vaccination of the countries between the 3-5% range, it may take about a year for these countries to have about 50% of the population fully vaccinated, though with an increasing rate of vacciation, it may take even less time.
 
 For Singapore, the full vaccination percentage as of now is about 4.16%. The rate of vaccination seems to be slowly decreasing, which could be explained by the policy of only vaccinating essential frontline workers first. With the import of the Moderna vaccines and the opening of vaccination to more of the populance, we would hope to see the rate of vaccination increase again. 
+
+.. raw:: html
+    :file: ../plots/line
+
+Total cases across countries
+----------------------------
+.. raw:: html
+    :file ../plots/epidemiology-geo-chart.html
+
+This animated chart shows the growth of COVID19 throughout the weeks around the world. 
