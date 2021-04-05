@@ -1,12 +1,13 @@
 Government policy responses
 ===========================
 
-In this section, we will be giving an overview about the global Covid-19 development situation and various government policies enforced in response to the pandemic outbreak. Effectiveness of these policies in curbing the spread of the virus will be evaluated. However, inevitably, these policies will also severely impact people's mobility. Some graphs are created to visualise the extent of the impact as well.
+In this section, we will be giving an overview about the global Covid-19 development situation and various government policies enforced in response to the pandemic outbreak. Effectiveness of these policies in curbing the spread of the virus will be evaluated. However, inevitably, these policies will also severely impact people's mobility. Visualisation is created to visualise the extent of the impact as well.
 
-**Data source is missing, explain visual encoding for each graph**
+Visualisation for government queries
+------------------------------------
 
-Covid-19 developments
----------------------
+1.1 Covid-19 developments
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Since 2019, Covid-19 has been rapidly spreading across the global. Although many efforts spent in vaccination innovation, travel restriction, social distancing and healthcare improvement, total number of confirmed cases is still increasing at an exponential rate.
 
@@ -15,8 +16,8 @@ Since 2019, Covid-19 has been rapidly spreading across the global. Although many
 .. raw:: html
     :file: ../plots/pandemic-development.html
     
-Overall policy effectiveness 
-----------------------------
+1.2 Overall policy effectiveness 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Based on research done by Oxford university, 8 types of policies (shown in the table below) are implemented by various countries to fight against Covid-19. Some of these policies are normally used together by most of the governments. However, due to differences in local situation, these policies are executed in very different ways. Hence researchers come up with a stringency index to represent the collective enforcement level of these policies, the higher the more stringent approaches are adopted. 
 
@@ -114,23 +115,9 @@ As shown in the graph, policy effectiveness varies significantly across differen
         
         .. raw:: html
             :file: ../plots/new-confirmed-vs-policy-US.html
-			
-Time for policies to take effect
---------------------------------
 
-As mentioned, 8 types of policies are mostly used by various governments. How long will these policies take before they slow down or stop the spread of the virus? To study this, we normalised the data from several governments by visualising daily new confirmed cases after 100 days of the policy start dates. By observing the trend, the number of daily new confirmed cases will continue to rise for roughly 20 to 40 days before the number goes down.
-
-Ceveat for this analysis: 
-
-* as many of these policies are used as a bundle, univariate correlation might not be accurately representing the effectness of a single policy
-* India, US and Brazil can be removed from this analysis (by clicking on the legend) as they will skew the y-axis readings
-
-.. raw:: html
-	:file: ../plots/100-days-after-policy.html
-
-
-Impact on mobility at transit stations
---------------------------------------
+1.3 Impact on mobility at transit stations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Mobility at transit stations is an important indicator to domestic and internal travel frequency. When transportation industry is booming and many people travel around, this mobility index will rise. For this analysis, we will look at Google mobility index at transit stations. This index represents the percentage change as compare to the observation period. When below 0, it means relative to the observation period, the mobility decreases and vice versa. In our chart, we look at a 3-way interaction between policy stringency, daily new confirmed cases and mobility index for various countries.
 
@@ -145,4 +132,18 @@ Each marker represents a country. Size of the marker represents the stringency i
 	:file: ../plots/stringency-vs-mobility-vs-new-cases.html
 
 
-**TODO: more exploration of transit related plots**
+Other visualisations
+--------------------
+
+2.1 Time for policies to take effect
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+As mentioned, 8 types of policies are mostly used by various governments. How long will these policies take before they slow down or stop the spread of the virus? To study this, we normalised the data from several governments by visualising daily new confirmed cases after 100 days of the policy start dates. By observing the trend, the number of daily new confirmed cases will continue to rise for roughly 20 to 40 days before the number goes down.
+
+Ceveat for this analysis: 
+
+* as many of these policies are used as a bundle, univariate correlation might not be accurately representing the effectness of a single policy
+* India, US and Brazil can be removed from this analysis (by clicking on the legend) as they will skew the y-axis readings
+
+.. raw:: html
+	:file: ../plots/100-days-after-policy.html

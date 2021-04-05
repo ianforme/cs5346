@@ -5,6 +5,7 @@ To the general populance, living with COVID has mostly became the new normal. Pe
 
 Vaccination rate across countries
 ---------------------------------
+
 .. raw:: html
     :file: ../plots/line-percentage-vax.html
 
@@ -14,12 +15,10 @@ From this chart, we can see that Gibraltar and Israel has achieved a full vaccin
 
 For Singapore, the full vaccination percentage as of now is about 4.16%. The rate of vaccination seems to be slowly decreasing, which could be explained by the policy of only vaccinating essential frontline workers first. With the import of the Moderna vaccines and the opening of vaccination to more of the populance, we would hope to see the rate of vaccination increase again. 
 
-.. raw:: html
-    :file: ../plots/line
-
 Total cases across countries
 ----------------------------
+
 .. raw:: html
-    :file ../plots/epidemiology-geo-chart.html
+	:file: ../plots/epidemiology-geo-chart.html
 
 This animated chart shows the growth of COVID19 throughout the weeks around the world. 
