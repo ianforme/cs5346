@@ -24,32 +24,32 @@ Impact of Covid-19 on Global Transportation
 Abstract
 --------
 
-This project aims to provide insightful visualisations for **governments, business organisations and the general public to understand various social-economic impacts of Covid-19, with a special focus on the global transportation industry. In addition, it will provide an overview of Covid-19 developments. Effectiveness of government responses are evaluated as well.** This work is mostly based on open datasets gathered and released by Google and Oxford University. Multiple data sources are combined / linked together to develop the storyline.
+This project aims to provide insightful visualizations for **governments, business organizations, and the general public to understand various social-economic impacts of Covid-19, with a special focus on the global transportation industry. Besides, it will provide an overview of Covid-19 developments. The effectiveness of government responses is evaluated as well.** This work is mostly based on open datasets gathered and released by Google and Oxford University. Multiple data sources are combined/linked together to develop the storyline.
 
 Introduction
 ------------
 
-Since the end of 2019, Covid-19 has developed into a global pandemic with no sign of fading away. It seems to become an endless fight between the scientists inventing vaccines and the virus mutating into more infectious and deadly form. To survive in this challenging era, many governments have to impose various policies to curb spread. These policies include but not limited to closing public facilities, shutting down borders and enforcing social distancing. 
+Since the end of 2019, Covid-19 has developed into a global pandemic with no sign of fading away. It seems to become an endless fight between the scientists inventing vaccines and the virus mutating into a more infectious and deadly form. To survive in this challenging era, many governments have to impose various policies to curb the spread. These policies include but not limited to closing public facilities, shutting down borders, and enforcing social distancing. 
 
 Although these policies are effective in tackling the pandemic, they also have significant negative impacts on various industries. Transportation is one of the most severely impacted sectors in the world as domestic and international travels are strongly discouraged in most countries. Singapore Airline Group (SIA) has reported a net loss of S$3.5 billion as passenger numbers fall by 98.9% amid COVID-19. [#]_ Global maritime trade plunged by 4.1% in 2020 due to the unprecedented disruption as estimated by UNCTAD in its Review of Maritime Transport 2020, released on 12 November. [#]_
 
-Through this project, we want to visualise the **impact of Covid-19 on the global transportation industry** which might help various parties for better planning of **personal, organisational and national future.**
+Through this project, we want to visualize the **impact of Covid-19 on the global transportation industry** which might help various parties for better planning of **personal, organizational, and national future.**
 
 Target audience 
 ---------------
 
-As mentioned, our analysis aims to provide insights and answers queries for 3 different parties, i.e. government, business organisation and the general public. Each query is answered by at least one visualisations in this report. However, the team has made extra efforts in exploring various kinds of visualisations. These visualisations might not answer any specific queries but they provide additional valuable insights. They can be found in "Other visualisations" section in the upcoming pages where applicable.
+As mentioned, our analysis aims to provide insights and answers queries for 3 different parties, i.e. government, business organization, and the general public. Each query is answered by at least one visualization in this report. However, the team has made extra efforts in exploring various kinds of visualizations. These visualizations might not answer any specific queries but they provide additional valuable insights. They can be found in the "Other visualizations" section in the upcoming pages where applicable.
 
 +-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
 | Target Audience       | Query                                                                                         | Answered by         |
 +=======================+===============================================================================================+=====================+
-| Government            | How fast does Covid-19 develop globally? What are the current situation in various countries? | Government 1.1      |
+| Government            | How fast does Covid-19 develop globally? What is the current situation in various countries? | Government 1.1      |
 +-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
 | Government            | Do stringent policies help to stop the spread of the virus more effectively?                  | Government 1.2      |
 +-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
 | Government            | To what extent will these stringent policies affect people's mobility?                        | Government 1.3      |
 +-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
-| Business organisation |                                                                                               |                     |
+| Business organization |                                                                                               |                     |
 +-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
 | General public        |                                                                                               |                     |
 +-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
@@ -64,14 +64,14 @@ This work leverages the following datasets:
 COVID-19 Open-Data
 ^^^^^^^^^^^^^^^^^^
 
-This repository attempts to assemble the largest Covid-19 epidemiological database in addition to a powerful set of expansive covariates. It includes open, publicly sourced, licensed data relating to **demographics, economy, epidemiology, geography, health, hospitalizations, mobility, government response, weather, and more.** Moreover, the data merges **daily time-series**, +20,000 global sources, at a fine **spatial resolution**, using a consistent set of region keys. These data come from credible sources including but not limited to Oxford University, Imperial College of London, FinMango and Google. As per this project, selected tables are used for visualisations. 
+This repository attempts to assemble the largest Covid-19 epidemiological database in addition to a powerful set of expansive covariates. It includes open, publicly sourced, licensed data relating to **demographics, economy, epidemiology, geography, health, hospitalizations, mobility, government response, weather, and more.** Moreover, the data merge **daily time-series**, +20,000 global sources, at a fine **spatial resolution**, using a consistent set of region keys. These data come from credible sources including but not limited to Oxford University, Imperial College of London, FinMango, and Google. As per this project, selected tables are used for visualizations. 
 
 .. content-tabs::
 
     .. tab-container:: tab1
         :title: Index
         
-        Index table includes non-temporal data related to countries and regions. It is used in many visualisations to find country specific informations.
+        The index table includes non-temporal data related to countries and regions. It is used in many visualizations to find country-specific pieces of information.
         
         +-------------------+---------------+------------------------------------------------------------------------------------------------------------------+-----------------------------+
         |        Name       |      Type     |                                                    Description                                                   |           Example           |
@@ -137,7 +137,7 @@ This repository attempts to assemble the largest Covid-19 epidemiological databa
     .. tab-container:: tab3
         :title: Mobility
         
-        Mobility table measures various metrics related to movement of the people. It is based on `Google's Mobility Reports <https://www.google.com/covid19/mobility/>`_. This data measures the changes for each day compared to a baseline value for that day of the week. The baseline value is the median during the 5-week period from 3 Jan to 6 Feb 2020.
+        The mobility table measures various metrics related to the movement of the people. It is based on `Google's Mobility Reports <https://www.google.com/covid19/mobility/>`_. This data measures the changes for each day compared to a baseline value for that day of the week. The baseline value is the median during the 5 weeks from 3 Jan to 6 Feb 2020.
         
         +--------------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+
         |              Name              |    Type    |                                                                              Description                                                                             |   Example  |
@@ -162,7 +162,7 @@ This repository attempts to assemble the largest Covid-19 epidemiological databa
     .. tab-container:: tab4
         :title: Oxford government policy responses
         
-        Government responses table provides a summary of government's responses to the events. It also includes a *stringency index*, provided by the Oxford University which measures the overall strigent level of the policies for the country.
+        The government responses table provides a summary of the government's responses to the events. It also includes a *stringency index*, provided by the Oxford University which measures the overall stringent level of the policies for the country.
         
         +------------------------------------+----------------+----------------------------------------------------------+-------------+
         |                Name                |      Type      |                        Description                       |   Example   |
@@ -212,31 +212,11 @@ This repository attempts to assemble the largest Covid-19 epidemiological databa
         | stringency_index                   | double [0-100] | Overall stringency index                                 | 71.43       |
         +------------------------------------+----------------+----------------------------------------------------------+-------------+
 
-Datasets for visualisation
-^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This section outlines for each visualisation created, which datasets and tables are used.
-
-+--------------------+--------------------+-----------------------------------------------------+
-| Visualisation      | Dataset            | Table(s)                                            |
-+====================+====================+=====================================================+
-| Government 1.1     | COVID-19 Open-Data | Index, Epidemiology                                 |
-+--------------------+--------------------+-----------------------------------------------------+
-| Government 1.2     | COVID-19 Open-Data | Index, Epidemiology, Government responses           |
-+--------------------+--------------------+-----------------------------------------------------+
-| Government 1.3     | COVID-19 Open-Data | Index, Epidemiology, Government responses           |
-+--------------------+--------------------+-----------------------------------------------------+
-| Government 2.1     | COVID-19 Open-Data | Index, Epidemiology, Government responses, Mobility |
-+--------------------+--------------------+-----------------------------------------------------+
-| Business 1.1       |                    |                                                     |
-+--------------------+--------------------+-----------------------------------------------------+
-| General public 1.1 |                    |                                                     |
-+--------------------+--------------------+-----------------------------------------------------+
-
-Data processing & visualisation steps
+Data processing & visualization steps
 -------------------------------------
 
-**TODO: This section will outline the data processing methods / tools. For charts will be elaborated in details**
+**TODO: This section will outline the data processing methods/tools. For charts will be elaborated in details**
 
 Overview
 ^^^^^^^^
