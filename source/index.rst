@@ -60,6 +60,8 @@ Data dictionary
 This work leverages the following datasets:
 
 1. `COVID-19 Open-Data <https://github.com/GoogleCloudPlatform/covid-19-open-data>`_ 
+2. `Global Economic Monitor <https://datacatalog.worldbank.org/dataset/global-economic-monitor>`_
+3. `Container Volume Traffic <https://www.containerstatistics.com/>`_
 
 COVID-19 Open-Data
 ^^^^^^^^^^^^^^^^^^
@@ -212,6 +214,54 @@ This repository attempts to assemble the largest Covid-19 epidemiological databa
         | stringency_index                   | double [0-100] | Overall stringency index                                 | 71.43       |
         +------------------------------------+----------------+----------------------------------------------------------+-------------+
 
+Global Economic Monitor
+^^^^^^^^^^^^^^^^^^^^^^^
+This dataset provides daily updates of global economic developments, with coverage of high income- as well as developing countries. Daily data updates are provided for exchange rates, equity markets, and emerging market bond indices. Monthly data coverage (updated daily and populated upon availability) is provided for consumer prices, high-tech market indicators, industrial production and **merchandise trade**. The following two tables are used in this project.
+
+
+.. content-tabs::
+
+    .. tab-container:: tab1
+        :title: Exports Merchandise, Customs, current US$, millions, seas. adj.
+        
+        Merchandise (goods) exports, cost, insurance and freight basis (c.i.f.), in current US$ millions, seasonally adjusted.
+        
+        +---------------------------------+---------------+------------------------------------------------------------------------------------------------------------------+-----------------------------+
+        |        Name                     |      Type     |                                                    Description                                                   |           Example           |
+        +=================================+===============+==================================================================================================================+=============================+
+        | country/region                  | string        | Unique string identifying the country or region                                                                  | Singapore                   |
+        +---------------------------------+---------------+------------------------------------------------------------------------------------------------------------------+-----------------------------+
+        | Export merchandise              | double [USD]  | Export merchandise measured in millions of US dollars                                                            | 27375.69                    |
+        +---------------------------------+---------------+------------------------------------------------------------------------------------------------------------------+-----------------------------+
+
+    .. tab-container:: tab2
+        :title: Imports Merchandise, Customs, current US$, millions, seas. adj.
+        
+        Merchandise (goods) imports, cost, insurance and freight basis (c.i.f.), in current US$ millions, seasonally adjusted.
+        
+        +---------------------------------+---------------+------------------------------------------------------------------------------------------------------------------+-----------------------------+
+        |        Name                     |      Type     |                                                    Description                                                   |           Example           |
+        +=================================+===============+==================================================================================================================+=============================+
+        | country/region                  | string        | Unique string identifying the country or region                                                                  | Singapore                   |
+        +---------------------------------+---------------+------------------------------------------------------------------------------------------------------------------+-----------------------------+
+        | Import merchandise              | double [USD]  | Import merchandise measured in millions of US dollars                                                            | 25865.38                    |
+        +---------------------------------+---------------+------------------------------------------------------------------------------------------------------------------+-----------------------------+
+
+Container Volume
+^^^^^^^^^^^^^^^^
+This dataset provides container volume traffic for regions and Brazil. This project uses the Brazil import/export volumes table.
+
+Export/import container volume in Brazil.
+
++-----------------------------------+---------------+------------------------------------------------------------------------------------------------------------------+-----------------------------+
+|        Name                       |      Type     |                                                    Description                                                   |           Example           |
++===================================+===============+==================================================================================================================+=============================+
+| date                              | string        | Date (YYYY/m/DD) of the datapoint                                                                                | 2020/6/30                   |
++-----------------------------------+---------------+------------------------------------------------------------------------------------------------------------------+-----------------------------+
+| Export Container Volume           | integer       | Export container volume index measured in TEUs                                                                   | 212049                      |
++-----------------------------------+---------------+------------------------------------------------------------------------------------------------------------------+-----------------------------+
+| Import Container Volume           | integer       | Import container volume index measured in TEUs                                                                   | 202857                      |
++-----------------------------------+---------------+------------------------------------------------------------------------------------------------------------------+-----------------------------+
 
 Data processing & visualization steps
 -------------------------------------
