@@ -3,6 +3,11 @@ Business Related - Chenxi
 
 In this part, we will first take Brazil as an example to answer the query how the transportation industry is impacted by public policies. Then we will use the import/export data to see which countries are recovering from Covid-19.
 
+Visualization for business queries
+----------------------------------
+
+1.1 Impact on import/export merchandise from government policy 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Brazil import/export merchandise measured in dollars and container volume
 -------------------------------------------------------------------------
 
@@ -11,12 +16,52 @@ Brazil import/export merchandise measured in dollars and container volume
     .. tab-container:: tab1
         :title: import/export merchandise measured in dollars
 
+        **Visual encoding**
+
+        - x-axis represents the time at date interval
+        - y-axis at left represents value of merchandise in USD
+        - y-axis at right represents policy stringency level
+        - blue line represents the value of export merchandise, referring to the left y-axis
+        - red line represents the value of import merchandise, referring to the left y-axis
+        - green line represents the international travel stringency index, referring to the right y-axis
+        - purple line represents the overall stringency index, referring to the right y-axis
+
+        **Dataset used**
+
+        +--------------------+-------------------------+-----------------------------------------------------+
+        | Visualisation      | Dataset                 | Table(s)                                            |
+        +====================+=========================+=====================================================+
+        | Business 2.1       | COVID-19 Open-Data      | Index                                               |
+        +                    +-------------------------+-----------------------------------------------------+
+        |                    | Global Economic Monitor | Import merchandise, Export merchandise              |
+        +--------------------+-------------------------+-----------------------------------------------------+
+
         .. raw:: html
             :file: ../plots/brazil-dollar.html
 
     .. tab-container:: tab2
         :title: import/export merchandise measured in container volume
 
+        **Visual encoding**
+
+        - x-axis represents the time at date interval
+        - y-axis at left represents value of merchandise in container volume (TEU)
+        - y-axis at right represents policy stringency level
+        - blue line represents the value of export merchandise, referring to the left y-axis
+        - red line represents the value of import merchandise, referring to the left y-axis
+        - green line represents the international travel stringency index, referring to the right y-axis
+        - purple line represents the overall stringency index, referring to the right y-axis
+
+        **Dataset used**
+
+        +--------------------+--------------------------+-----------------------------------------------------+
+        | Visualisation      | Dataset                  | Table(s)                                            |
+        +====================+==========================+=====================================================+
+        | Business 2.1       | COVID-19 Open-Data       | Index                                               |
+        +                    +--------------------------+-----------------------------------------------------+
+        |                    | Container Volume Traffic | Export/import container volume in Brazil.           |
+        +--------------------+--------------------------+-----------------------------------------------------+
+        
         .. raw:: html
             :file: ../plots/brazil-container.html
 
@@ -28,6 +73,23 @@ From the graphs we can learn that:
 
 Import/export merchandise measured in dollars for selected countries
 --------------------------------------------------------------------
+
+**Visual encoding**
+
+- x-axis represents the time at date interval
+- y-axis at left represents value of merchandise in USD
+- countries are represented in lines with different colors as specified in the color legend
+
+**Dataset used**
+
++--------------------+-------------------------+-----------------------------------------------------+
+| Visualisation      | Dataset                 | Table(s)                                            |
++====================+=========================+=====================================================+
+| Business 2.1       | COVID-19 Open-Data      | Index                                               |
++                    +-------------------------+-----------------------------------------------------+
+|                    | Global Economic Monitor | Import merchandise, Export merchandise              |
++--------------------+-------------------------+-----------------------------------------------------+
+
 .. content-tabs::
     
     .. tab-container:: tab1
