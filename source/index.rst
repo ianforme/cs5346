@@ -40,19 +40,21 @@ Target audience
 
 As mentioned, our analysis aims to provide insights and answers queries for 3 different parties, i.e. government, business organization, and the general public. Each query is answered by at least one visualization in this report. However, the team has made extra efforts in exploring various kinds of visualizations. These visualizations might not answer any specific queries but they provide additional valuable insights. They can be found in the "Other visualizations" section in the upcoming pages where applicable.
 
-+-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
-| Target Audience       | Query                                                                                         | Answered by         |
-+=======================+===============================================================================================+=====================+
-| Government            | How fast does Covid-19 develop globally? What is the current situation in various countries? | Government 1.1      |
-+-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
-| Government            | Do stringent policies help to stop the spread of the virus more effectively?                  | Government 1.2      |
-+-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
-| Government            | To what extent will these stringent policies affect people's mobility?                        | Government 1.3      |
-+-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
-| Business organization |                                                                                               |                     |
-+-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
-| General public        |                                                                                               |                     |
-+-----------------------+-----------------------------------------------------------------------------------------------+---------------------+
++-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
+| Target Audience       | Query                                                                                             | Answered by         |
++-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
+| Government            | How fast does Covid-19 develop globally? What is the current situation in various countries?      | Government 1.1      |
++-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
+| Government            | Do stringent policies help to stop the spread of the virus more effectively?                      | Government 1.2      |
++-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
+| Government            | To what extent will these stringent policies affect people's mobility?                            | Government 1.3      |
++-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
+| Business organization | To what extent will stringent policy affect transportation business such as export merchandise?   | Business 1.1        |
++-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
+| Business organization | In terms of transportationm, which countries are recovering from from Covid-19?                   | Business 1.2        |
++-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
+| General public        |                                                                                                   |                     |
++-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
 
 Data dictionary
 ----------------

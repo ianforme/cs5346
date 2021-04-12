@@ -31,7 +31,7 @@ Brazil import/export merchandise measured in dollars and container volume
         +--------------------+-------------------------+-----------------------------------------------------+
         | Visualisation      | Dataset                 | Table(s)                                            |
         +====================+=========================+=====================================================+
-        | Business 2.1       | COVID-19 Open-Data      | Index                                               |
+        | Business 1.1       | COVID-19 Open-Data      | Index                                               |
         +                    +-------------------------+-----------------------------------------------------+
         |                    | Global Economic Monitor | Import merchandise, Export merchandise              |
         +--------------------+-------------------------+-----------------------------------------------------+
@@ -57,7 +57,7 @@ Brazil import/export merchandise measured in dollars and container volume
         +--------------------+--------------------------+-----------------------------------------------------+
         | Visualisation      | Dataset                  | Table(s)                                            |
         +====================+==========================+=====================================================+
-        | Business 2.1       | COVID-19 Open-Data       | Index                                               |
+        | Business 1.1       | COVID-19 Open-Data       | Index                                               |
         +                    +--------------------------+-----------------------------------------------------+
         |                    | Container Volume Traffic | Export/import container volume in Brazil.           |
         +--------------------+--------------------------+-----------------------------------------------------+
@@ -85,7 +85,7 @@ Import/export merchandise measured in dollars for selected countries
 +--------------------+-------------------------+-----------------------------------------------------+
 | Visualisation      | Dataset                 | Table(s)                                            |
 +====================+=========================+=====================================================+
-| Business 2.1       | COVID-19 Open-Data      | Index                                               |
+| Business 1.2       | COVID-19 Open-Data      | Index                                               |
 +                    +-------------------------+-----------------------------------------------------+
 |                    | Global Economic Monitor | Import merchandise, Export merchandise              |
 +--------------------+-------------------------+-----------------------------------------------------+
