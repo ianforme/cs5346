@@ -53,7 +53,7 @@ As mentioned, our analysis aims to provide insights and answers queries for 3 di
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
 | Business organization | In terms of transportationm, which countries are recovering from from Covid-19?                   | Business 1.2        |
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
-| General public        |                                                                                                   |                     |
+| General public        | To what extent is the vaccination rates of different countries?                                   | People 1.1          |
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
 
 Data dictionary
@@ -62,8 +62,9 @@ Data dictionary
 This work leverages the following datasets:
 
 1. `COVID-19 Open-Data <https://github.com/GoogleCloudPlatform/covid-19-open-data>`_ 
-2. `Global Economic Monitor <https://datacatalog.worldbank.org/dataset/global-economic-monitor>`_
-3. `Container Volume Traffic <https://www.containerstatistics.com/>`_
+2. `OWID COVID-19 Data <https://ourworldindata.org/coronavirus/>`_ 
+3. `Global Economic Monitor <https://datacatalog.worldbank.org/dataset/global-economic-monitor>`_
+4. `Container Volume Traffic <https://www.containerstatistics.com/>`_
 
 COVID-19 Open-Data
 ^^^^^^^^^^^^^^^^^^
@@ -215,6 +216,36 @@ This repository attempts to assemble the largest Covid-19 epidemiological databa
         +------------------------------------+----------------+----------------------------------------------------------+-------------+
         | stringency_index                   | double [0-100] | Overall stringency index                                 | 71.43       |
         +------------------------------------+----------------+----------------------------------------------------------+-------------+
+
+OWID COVID-19 Data
+^^^^^^^^^^^^^^^^^^
+
+This is another collection of COVID-19 Data provided by Our World in Data (OWID). While not as comprehensive as COVID-19 Open Data, the datasets are much cleaner compared to COVID-19 Open Data. Only selected tables are used for visualizations.
+
+.. content-tabs::
+
+    .. tab-container:: tab1
+        :title: Vaccinations
+        
+        The index table includes non-temporal data related to countries and regions. It is used in many visualizations to find country-specific pieces of information.
+        
+        .. csv-table::
+            :header: "Name", "Type", "Description", "Example"
+            :widths: 30, 15, 40, 5
+            
+            "location", "string", "Name of the country (or region within a country).", "Albania"
+            "iso_code", "string", "ISO 3166-1 alpha-3 – three-letter country codes.", "ALB"
+            "date", "string", "Date of the observation.", "13/1/2021"
+            "total_vaccinations", "integer", "Total number of doses administered. This is counted as a single dose, and may not equal the total number of people vaccinated, depending on the specific dose regime (e.g. people receive multiple doses). If a person receives one dose of the vaccine, this metric goes up by 1. If they receive a second dose, it goes up by 1 again.", 188
+            "total_vaccinations_per_hundred", "double [%]", "total_vaccinations per 100 people in the total population of the country.", 0.01
+            "daily_vaccinations_raw", "integer", "Daily change in the total number of doses administered. It is only calculated for consecutive days. This is a raw measure provided for data checks and transparency, but we strongly recommend that any analysis on daily vaccination rates be conducted using daily_vaccinations instead.", 60
+            "daily_vaccinations", "integer", "New doses administered per day (7-day smoothed). For countries that don't report data on a daily basis, we assume that doses changed equally on a daily basis over any periods in which no data was reported. This produces a complete series of daily figures, which is then averaged over a rolling 7-day window.", 63
+            "daily_vaccinations_per_million", "integer", "daily_vaccinations per 1,000,000 people in the total population of the country.", 22
+            "people_vaccinated", "integer", "Total number of people who received at least one vaccine dose. If a person receives the first dose of a 2-dose vaccine, this metric goes up by 1. If they receive the second dose, the metric stays the same.", 128
+            "people_vaccinated_per_hundred", "double [%]", "people_vaccinated per 100 people in the total population of the country.", 0.01
+            "people_fully_vaccinated", "integer", "Total number of people who received all doses prescribed by the vaccination protocol. If a person receives the first dose of a 2-dose vaccine, this metric stays the same. If they receive the second dose, the metric goes up by 1.", 0
+            "people_fully_vaccinated_per_hundred", "double [%]", "people_fully_vaccinated per 100 people in the total population of the country.", 0.0
+
 
 Global Economic Monitor
 ^^^^^^^^^^^^^^^^^^^^^^^

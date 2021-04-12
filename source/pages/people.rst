@@ -9,11 +9,26 @@ Vaccination rate across countries
 .. raw:: html
     :file: ../plots/line-percentage-vax.html
 
+**Visual encoding**
+
+- x-axis represents the date since the first vaccination is available (2 Jan 2021) up to 17 Mar 2021
+- y-axis left represents the percentage of population that has been vaccinated
+- lines represents the different countries
+
+**Dataset used**
+
++--------------------+-------------------------+-----------------------------------------------------+
+| Visualisation      | Dataset                 | Table(s)                                            |
++====================+=========================+=====================================================+
+| People 1.1         | OWID COVID-19 Data      | Vaccinations                                        |
++--------------------+-------------------------+-----------------------------------------------------+
+
+
 This line chart shows the percentage of people that has been fully vaccinated across various countries. Only countries that has a non-zero percentage have been plotted. Full vaccination is defined by whether a person has received all doses prescribed by the vaccination protocol, thus a person receiving the first dose of a 2-dose vaccine would not be counted. The legend is sorted by the percentage of full vaccination as of the latest date (2021-03-19).
 
 From this chart, we can see that Gibraltar and Israel has achieved a full vaccination percentage of more than 50%. A huge majority of the countries are still at below 5%. By zooming into the 0-5% range, we can see that the rate of vaccination of countries in the EU are fairly clustered, which bodes well for free travel within the EU again the in the future. Based on the rate of vaccination of the countries between the 3-5% range, it may take about a year for these countries to have about 50% of the population fully vaccinated, though with an increasing rate of vacciation, it may take even less time.
 
-For Singapore, the full vaccination percentage as of now is about 4.16%. The rate of vaccination seems to be slowly decreasing, which could be explained by the policy of only vaccinating essential frontline workers first. With the import of the Moderna vaccines and the opening of vaccination to more of the populance, we would hope to see the rate of vaccination increase again. 
+For Singapore, the full vaccination percentage as of now is about 4.16%. The rate of vaccination seems to be slowly decreasing. 
 
 Total cases across countries
 ----------------------------
