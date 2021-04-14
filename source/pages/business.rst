@@ -1,5 +1,5 @@
-Business Related - Chenxi
-=========================
+Business
+========
 
 In this part, we will first take Brazil as an example to answer the query how the transportation industry is impacted by public policies. Then we will use the import/export data to see which countries are recovering from Covid-19.
 

@@ -5,6 +5,7 @@
 
 Impact of Covid-19 on Global Transportation
 ===========================================
+:Group: 5
 
 :Authors:
     - Luo Wenhan (A0162266E)
@@ -42,7 +43,7 @@ As mentioned, our analysis aims to provide insights and answers queries for 3 di
 
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
 | Target Audience       | Query                                                                                             | Answered by         |
-+-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
++=======================+===================================================================================================+=====================+
 | Government            | How fast does Covid-19 develop globally? What is the current situation in various countries?      | Government 1.1      |
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
 | Government            | Do stringent policies help to stop the spread of the virus more effectively?                      | Government 1.2      |
@@ -51,7 +52,7 @@ As mentioned, our analysis aims to provide insights and answers queries for 3 di
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
 | Business organization | To what extent will stringent policy affect transportation business such as export merchandise?   | Business 1.1        |
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
-| Business organization | In terms of transportationm, which countries are recovering from from Covid-19?                   | Business 1.2        |
+| Business organization | In terms of transportation, which countries are recovering from from Covid-19?                    | Business 1.2        |
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
 | General public        | To what extent is the vaccination rates of different countries?                                   | People 1.1          |
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
@@ -221,30 +222,25 @@ OWID COVID-19 Data
 ^^^^^^^^^^^^^^^^^^
 
 This is another collection of COVID-19 Data provided by Our World in Data (OWID). While not as comprehensive as COVID-19 Open Data, the datasets are much cleaner compared to COVID-19 Open Data. Only selected tables are used for visualizations.
-
-.. content-tabs::
-
-    .. tab-container:: tab1
-        :title: Vaccinations
         
-        The index table includes non-temporal data related to countries and regions. It is used in many visualizations to find country-specific pieces of information.
-        
-        .. csv-table::
-            :header: "Name", "Type", "Description", "Example"
-            :widths: 30, 15, 40, 5
-            
-            "location", "string", "Name of the country (or region within a country).", "Albania"
-            "iso_code", "string", "ISO 3166-1 alpha-3 – three-letter country codes.", "ALB"
-            "date", "string", "Date of the observation.", "13/1/2021"
-            "total_vaccinations", "integer", "Total number of doses administered. This is counted as a single dose, and may not equal the total number of people vaccinated, depending on the specific dose regime (e.g. people receive multiple doses). If a person receives one dose of the vaccine, this metric goes up by 1. If they receive a second dose, it goes up by 1 again.", 188
-            "total_vaccinations_per_hundred", "double [%]", "total_vaccinations per 100 people in the total population of the country.", 0.01
-            "daily_vaccinations_raw", "integer", "Daily change in the total number of doses administered. It is only calculated for consecutive days. This is a raw measure provided for data checks and transparency, but we strongly recommend that any analysis on daily vaccination rates be conducted using daily_vaccinations instead.", 60
-            "daily_vaccinations", "integer", "New doses administered per day (7-day smoothed). For countries that don't report data on a daily basis, we assume that doses changed equally on a daily basis over any periods in which no data was reported. This produces a complete series of daily figures, which is then averaged over a rolling 7-day window.", 63
-            "daily_vaccinations_per_million", "integer", "daily_vaccinations per 1,000,000 people in the total population of the country.", 22
-            "people_vaccinated", "integer", "Total number of people who received at least one vaccine dose. If a person receives the first dose of a 2-dose vaccine, this metric goes up by 1. If they receive the second dose, the metric stays the same.", 128
-            "people_vaccinated_per_hundred", "double [%]", "people_vaccinated per 100 people in the total population of the country.", 0.01
-            "people_fully_vaccinated", "integer", "Total number of people who received all doses prescribed by the vaccination protocol. If a person receives the first dose of a 2-dose vaccine, this metric stays the same. If they receive the second dose, the metric goes up by 1.", 0
-            "people_fully_vaccinated_per_hundred", "double [%]", "people_fully_vaccinated per 100 people in the total population of the country.", 0.0
+The index table includes non-temporal data related to countries and regions. It is used in many visualizations to find country-specific pieces of information.
+
+.. csv-table::
+    :header: "Name", "Type", "Description", "Example"
+    :widths: 30, 15, 40, 5
+    
+    "location", "string", "Name of the country (or region within a country).", "Albania"
+    "iso_code", "string", "ISO 3166-1 alpha-3 – three-letter country codes.", "ALB"
+    "date", "string", "Date of the observation.", "13/1/2021"
+    "total_vaccinations", "integer", "Total number of doses administered. This is counted as a single dose, and may not equal the total number of people vaccinated, depending on the specific dose regime (e.g. people receive multiple doses). If a person receives one dose of the vaccine, this metric goes up by 1. If they receive a second dose, it goes up by 1 again.", 188
+    "total_vaccinations_per_hundred", "double [%]", "total_vaccinations per 100 people in the total population of the country.", 0.01
+    "daily_vaccinations_raw", "integer", "Daily change in the total number of doses administered. It is only calculated for consecutive days. This is a raw measure provided for data checks and transparency, but we strongly recommend that any analysis on daily vaccination rates be conducted using daily_vaccinations instead.", 60
+    "daily_vaccinations", "integer", "New doses administered per day (7-day smoothed). For countries that don't report data on a daily basis, we assume that doses changed equally on a daily basis over any periods in which no data was reported. This produces a complete series of daily figures, which is then averaged over a rolling 7-day window.", 63
+    "daily_vaccinations_per_million", "integer", "daily_vaccinations per 1,000,000 people in the total population of the country.", 22
+    "people_vaccinated", "integer", "Total number of people who received at least one vaccine dose. If a person receives the first dose of a 2-dose vaccine, this metric goes up by 1. If they receive the second dose, the metric stays the same.", 128
+    "people_vaccinated_per_hundred", "double [%]", "people_vaccinated per 100 people in the total population of the country.", 0.01
+    "people_fully_vaccinated", "integer", "Total number of people who received all doses prescribed by the vaccination protocol. If a person receives the first dose of a 2-dose vaccine, this metric stays the same. If they receive the second dose, the metric goes up by 1.", 0
+    "people_fully_vaccinated_per_hundred", "double [%]", "people_fully_vaccinated per 100 people in the total population of the country.", 0.0
 
 
 Global Economic Monitor
@@ -299,17 +295,31 @@ Export/import container volume in Brazil.
 Data processing & visualization steps
 -------------------------------------
 
-**TODO: This section will outline the data processing methods/tools. For charts will be elaborated in details**
-
 Overview
 ^^^^^^^^
+
+Visualisations in this work are mostly created by `Plotly <https://plotly.com/python/>`_, a popular and powerful graphing library in Python. The original datasets are downloaded and pre-processed in Python, with `Pandas <https://pandas.pydata.org/>`_ and `Numpy <https://numpy.org/>`_. The detailed steps of pre-processing are based on the specifications of visualizations, which are customized and elaborated in the next section - *Step-wise process*. Charts are exported in html formats and loaded in this `Sphinx <https://www.sphinx-doc.org/en/master/#>`_ document for reporting and presentation.
 
 Step-wise process
 ^^^^^^^^^^^^^^^^^
 
-Other relevant information
---------------------------
+**Government 1.2 - Overall policy effectiveness**
 
+1. download index table from COVID-19 Open Data and load it in memory
+2. fileter dates, keep index table records from 2020-01-01 to 2021-02-01
+3. filter countries, keep index table records from traget countries, i.e., China, US, UK, France, Singapore, India, Brazil, Korea, Japan, Italy and Malaysia. Find country codes in of these target countries. These country codes are used for the following steps.
+4. download epidemiology table from COVID-19 Open Data and load it in memory
+5. filter dates, keep epidemiology table records from 2020-01-01 to 2021-02-01
+6. filter countries, keep epidemiology table records from traget countries
+7. impute missing values in epidemiology table with 0. In some countries, Covid test was not conducted in the beginning hence daily confimed cases were missing. It is reasonable to impute them as 0.
+8. download policy response table from COVID-19 Open Data and load it in memory
+9. filter dates and countries in the same way as the other tables.
+10. for each country from the target country lists:
+	- filter and keep records from the country in both epidemiology and policy response tables
+	- create epidemiology line trace with x as the dates and y as the daily new confirmed cases
+	- create stringency index line trace with x as the date and y as the stringency index
+	- make a dual-axis plot, with primary y as the daily new confirmed cases and secondary y as the stringency index
+	- export chart for that country
 
 References
 ----------
