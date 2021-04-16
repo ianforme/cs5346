@@ -321,6 +321,19 @@ Step-wise process
 	- make a dual-axis plot, with primary y as the daily new confirmed cases and secondary y as the stringency index
 	- export chart for that country
 
+**Business 1.1 - Policy impact on import/export merchandise**
+
+1. download import/export merchandise table from Global Economic Monitor and load it in memory
+2. fileter dates, keep merchandise records from 2020-01-01 to 2021-02-01
+3. filter countries, keep merchandise records from the traget country, Brazil
+4. download index table from COVID-19 Open Data and load it in memory
+5. filter dates, keep index table records from 2020-01-01 to 2021-02-01
+6. filter countries, keep index table records from the traget country, Brazil
+7. create stringency index line trace with x as the date and y as the stringency index
+8. create import/export merchandise line trace with x as the date and y as the value of merchandise
+9. make a dual-axis plot, with primary y as the value of merchandise and secondary y as the stringency index
+10. export chart
+
 References
 ----------
 
