@@ -1,7 +1,10 @@
-People 
+People
 ======
 
 To the general populance, living with COVID has mostly became the new normal. People in Singapore and around the world has mostly complied with all of the restrictions put in place by the government (see the page on government) to minimize the impact of COVID. Yet, most people would still want to gain back some freedoms from pre-COVID, such as being able to travel to other countries without the risk of infection. As such, the following visualizations would answer some potential queries that people would have, and give people some hope for more freedom in the future.
+
+Visualization for people queries
+--------------------------------
 
 1.1 Vaccination rate across countries
 -------------------------------------
