@@ -334,6 +334,24 @@ Step-wise process
 9. make a dual-axis plot, with primary y as the value of merchandise and secondary y as the stringency index
 10. export chart
 
+**People 1.1 - Vaccination rate across countries**
+
+1. download vaccinations rate csv from OWID and load into memory
+2. filter ISO code that contains "OWID" (Such codes are for subregions or category of regions used by OWID)
+3. select the following columns: "location", "date", "people_fully_vaccinated_per_hundred"
+4. perform a groupby on "location", for each group:
+    1. append a row with date "2021-01-02" (1 day before earliest vaccination date of all countries) and "people_fully_vaccinated_per_hundred" at 0
+    2. append a row with date "2021-03-17" (latest date with data), "people_fully_vaccinated_per_hundred" is left blank
+    3. convert date to datetime and set it as a datetimeindex (to facilitate datetime operations)
+    4. sort the group on the index
+    5. filter out any data with date before "2020-01-02" (to remove rows with an early date but "people_fully_vaccinated_per_hundred" is 0 or blank)
+    6. interpolate "people_fully_vaccinated_per_hundred" in both direction using the "time" method which takes in account of the varying resolution of the data
+5. perform another groupby on "location", and filter out groups where "people_fully_vaccinated_per_hundred" is 0 as of the latest date
+6. make a line chart with x-axis as "date", y-axis as "people_fully_vaccinated_per_hundred", color as "location"
+7. limit the x-axis of the line chart to between 2021-01-02 and 2021-03-17, the y-axis to between 0 and 100
+8. set the order of the locations in the legend to the max "people_fully_vaccinated_per_hundred" of each location in descending order
+9. export the chart
+
 References
 ----------
 
