@@ -5,14 +5,20 @@
 
 Impact of Covid-19 on Global Transportation
 ===========================================
-:Group: 5
+:Group: Group 5
 
 :Authors:
     - Luo Wenhan (A0162266E)
     - Sun Weiran (A0130945H)
     - Zhang Chenxi (A0177389H)
 
-:Version: 0.1 of 2021/04/05
+:Contribution:
+	- Luo Wenhan: People-related queries
+	- Sun Weiran: Government-related queries
+	- Zhang Chenxi: Business-related queries
+	- The other parts, e.g., abstract, introduction etc, are collectively completed together
+
+:Version: 1.0 of 2021/04/18
 
 .. toctree::
    :maxdepth: 1
@@ -39,7 +45,7 @@ Through this project, we want to visualize the **impact of Covid-19 on the globa
 Target audience 
 ---------------
 
-As mentioned, our analysis aims to provide insights and answers queries for 3 different parties, i.e. government, business organization, and the general public. Each query is answered by at least one visualization in this report. However, the team has made extra efforts in exploring various kinds of visualizations. These visualizations might not answer any specific queries but they provide additional valuable insights. They can be found in the "Other visualizations" section in the upcoming pages where applicable.
+As mentioned, our analysis aims to provide insights and answers queries for 3 different parties, i.e. government, business organization, and the general public. Each query is answered by at least one visualization in this report. 
 
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
 | Target Audience       | Query                                                                                             | Answered by         |
@@ -56,6 +62,20 @@ As mentioned, our analysis aims to provide insights and answers queries for 3 di
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
 | General public        | To what extent is the vaccination rates of different countries?                                   | People 1.1          |
 +-----------------------+---------------------------------------------------------------------------------------------------+---------------------+
+
+Other visualisation explorations
+--------------------------------
+
+The team has made extra efforts in exploring various kinds of visualizations. These visualizations might not answer any specific queries but they provide additional valuable insights. They can be found in the "Other visualizations" section in the upcoming pages where applicable.
+
++----------------+-----------------------------------------+
+| Visualisation  | Purpose                                 |
++================+=========================================+
+| Government 2.1 | Time for policies to take effect        |
++----------------+-----------------------------------------+
+| People 2.1     | Total cases across countries (map view) |
++----------------+-----------------------------------------+
+
 
 Data dictionary
 ----------------
