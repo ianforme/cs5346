@@ -6,10 +6,9 @@ In this part, we will first take Brazil as an example to answer the query how th
 Visualization for business queries
 ----------------------------------
 
-1.1 Impact on import/export merchandise from government policy 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Brazil import/export merchandise measured in dollars and container volume
--------------------------------------------------------------------------
+1.1 Impact on Brazil import/export merchandise measured in dollars and container volume from government policy 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 From the graphs we can learn that:
 
 * Brazil's import merchandise is impacted by public policies especially international travel policy. However, its export merchandise is not impacted by the its public policy.
@@ -20,7 +19,11 @@ From the graphs we can learn that:
     
     .. tab-container:: tab1
         :title: import/export merchandise measured in dollars
-
+        
+        .. raw:: html
+        
+            <hr>
+        
         **Visual encoding**
 
         - x-axis represents the time at date interval
@@ -40,13 +43,21 @@ From the graphs we can learn that:
         +                    +-------------------------+-----------------------------------------------------+
         |                    | Global Economic Monitor | Import merchandise, Export merchandise              |
         +--------------------+-------------------------+-----------------------------------------------------+
-
+        
+        .. raw:: html
+        
+            <hr>
+            
         .. raw:: html
             :file: ../plots/brazil-dollar.html
 
     .. tab-container:: tab2
         :title: import/export merchandise measured in container volume
-
+        
+        .. raw:: html
+        
+            <hr>
+        
         **Visual encoding**
 
         - x-axis represents the time at date interval
@@ -68,30 +79,19 @@ From the graphs we can learn that:
         +--------------------+--------------------------+-----------------------------------------------------+
         
         .. raw:: html
+        
+            <hr>
+            
+        .. raw:: html
             :file: ../plots/brazil-container.html
 
-Import/export merchandise measured in dollars for selected countries
---------------------------------------------------------------------
+1.2 Import/export merchandise measured in dollars for selected countries
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 From the graphs we can learn that:
 
 * China has its lowest point for export merchandise in Feburary, 2020, while the other countries's are in May, 2020. There is large fluctuations in Brazil's export merchandise.
 * For import merchandise, all the selected countries have similar trend.
-
-**Visual encoding**
-
-- x-axis represents the time at date interval
-- y-axis at left represents value of merchandise in USD
-- countries are represented in lines with different colors as specified in the color legend
-
-**Dataset used**
-
-+--------------------+-------------------------+-----------------------------------------------------+
-| Visualisation      | Dataset                 | Table(s)                                            |
-+====================+=========================+=====================================================+
-| Business 1.2       | COVID-19 Open-Data      | Index                                               |
-+                    +-------------------------+-----------------------------------------------------+
-|                    | Global Economic Monitor | Import merchandise, Export merchandise              |
-+--------------------+-------------------------+-----------------------------------------------------+
 
 .. content-tabs::
     
@@ -99,10 +99,59 @@ From the graphs we can learn that:
         :title: import merchandise measured in dollars
 
         .. raw:: html
+
+            <hr>
+
+        **Visual encoding**
+
+        - x-axis represents the time at date interval
+        - y-axis at left represents value of merchandise in USD
+        - countries are represented in lines with different colors as specified in the color legend
+
+        **Dataset used**
+
+        +--------------------+-------------------------+-----------------------------------------------------+
+        | Visualisation      | Dataset                 | Table(s)                                            |
+        +====================+=========================+=====================================================+
+        | Business 1.2       | COVID-19 Open-Data      | Index                                               |
+        +                    +-------------------------+-----------------------------------------------------+
+        |                    | Global Economic Monitor | Import merchandise, Export merchandise              |
+        +--------------------+-------------------------+-----------------------------------------------------+
+
+        .. raw:: html
+
+            <hr>
+
+        .. raw:: html
             :file: ../plots/import-countries-dollar.html
 
     .. tab-container:: tab2
         :title: export merchandise measured in dollars
+
+        .. raw:: html
+
+            <hr>
+
+        **Visual encoding**
+
+        - x-axis represents the time at date interval
+        - y-axis at left represents value of merchandise in USD
+        - countries are represented in lines with different colors as specified in the color legend
+
+        **Dataset used**
+
+        +--------------------+-------------------------+-----------------------------------------------------+
+        | Visualisation      | Dataset                 | Table(s)                                            |
+        +====================+=========================+=====================================================+
+        | Business 1.2       | COVID-19 Open-Data      | Index                                               |
+        +                    +-------------------------+-----------------------------------------------------+
+        |                    | Global Economic Monitor | Import merchandise, Export merchandise              |
+        +--------------------+-------------------------+-----------------------------------------------------+
+
+        .. raw:: html
+
+            <hr>
+
 
         .. raw:: html
             :file: ../plots/export-countries-dollar.html
